@@ -34,7 +34,7 @@ class NanoCompanyCEO extends NanoCompany {
   int? _staffPay = 90000;
   int? _staffID = 2015919231;
 }
-
+// Polymorphism and Inheritance (2)
 class NanoCompanyManger extends NanoCompanyCEO {
   @override
   String? _staffName = 'Nathan';
@@ -44,10 +44,7 @@ class NanoCompanyManger extends NanoCompanyCEO {
   int? _staffID = 2017913241;
 }
 
-class Access {
-  NanoCompany dataAccess = NanoCompany();
-}
-
+// Display
 void main() {
   NanoCompany regularStaff = NanoCompany();
   regularStaff.nanoStaffDetails();
