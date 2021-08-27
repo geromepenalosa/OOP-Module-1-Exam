@@ -1,7 +1,7 @@
 class NanoCompany {
   //This class exhibits Abstraction because as you can see, the nanoCompanyStaff class is not directly used but
   //the nanoStaffDetails instead (the nanoCompanyStaff method is hidden to the users).
-  //
+  
 
   String? _staffName = 'Gerome';
   String? _staffPosition = 'Regular';
@@ -24,6 +24,8 @@ class NanoCompany {
   }
 }
 
+// These classes exhibit both Polymorphisnm and Inheritance because these classes inherits from the NanoCompany class and then overriding it
+// which also demonstrates Polymorphism. Every class override makes the name of the staff, position, age, and pay different.
 class NanoCompanyCEO extends NanoCompany {
   @override
   String? _staffName = 'Robert';
